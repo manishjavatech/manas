@@ -13,7 +13,7 @@
 	<import resource="../config/database.xml" />
 
 	<bean id="employee" class="com.manas.model.Employee" scope="prototype" />
-	<bean id="itemProcessor" class="com.manas.CustomItemProcessor" />
+	<bean id="itemProcessor" class="com.manas.EmployeeItemProcessor" />
 
 	<batch:job id="employeeJob">
 		<batch:step id="step1">
