@@ -8,7 +8,8 @@ public class CustomItemProcessor implements ItemProcessor<Employee, Employee> {
 
 	@Override
 	public Employee process(Employee item) throws Exception {
-		
+		BigDecimal bonus=new BigDecimal(1111.00D);
+		employee.setSalary(employee.getSalary().add(bonus));
 		System.out.println("Processing..." + item);
 		return item;
 	}
